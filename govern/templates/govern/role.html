@@ -1,0 +1,12 @@
+<h3>position:</h3><h1>{{position}}</h1>
+
+
+<ul>
+    {%for role in role%}
+    <p>{{role}}</p>
+    {%empty%}
+    <p>NO RECORD</p>
+    {%endfor%}
+</ul>
+
+<a href="{%url 'add_role' position.id%}">click to add role</a>

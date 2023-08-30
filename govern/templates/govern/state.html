@@ -1,0 +1,10 @@
+<p><a href="{%url 'index'%}">go index page</a></p>
+<ul>
+    {% for i in key %}
+    <a href="{%url 'role' i.id%}"><li>{{i}}</li></a>
+    {%empty%}
+    <li>the table is empty</li>
+    {%endfor%}
+</ul>
+
+<a href="{%url 'add_position'%}">Add position</a>

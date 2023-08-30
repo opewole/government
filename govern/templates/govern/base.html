@@ -1,0 +1,14 @@
+<h1> welcome to my webapp </h1>
+
+
+{% if user.is_authenticated %}
+Hello, {{user.username}}
+
+{%else%}
+<a href="{%url 'login' %}">login</a>
+
+
+
+{%block content%}
+
+{%endblock content%}
